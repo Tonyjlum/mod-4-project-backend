@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_07_185811) do
+ActiveRecord::Schema.define(version: 2019_02_08_152238) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "appointments", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "chef_id"
+    t.integer "guest_count"
+    t.integer "cost"
+    t.string "speical_note", default: "none"
+    t.datetime "datetime", default: "2019-02-08 15:44:03"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "chefs", force: :cascade do |t|
     t.string "name"
@@ -21,6 +32,7 @@ ActiveRecord::Schema.define(version: 2019_02_07_185811) do
     t.integer "price"
     t.integer "rating"
     t.string "profile_picture_url"
+    t.string "bio"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

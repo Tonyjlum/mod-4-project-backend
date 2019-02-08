@@ -6,6 +6,7 @@ class CreateChefs < ActiveRecord::Migration[5.2]
       t.integer :price
       t.integer :rating
       t.string :profile_picture_url
+      t.string :bio
 
       t.timestamps
     end
