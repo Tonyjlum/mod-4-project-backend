@@ -5,7 +5,7 @@ class CreateAppointments < ActiveRecord::Migration[5.2]
       t.integer :chef_id
       t.integer :guest_count
       t.integer :cost
-      t.string :speical_note, :default => "none"
+      t.string :note, :default => "none"
       t.datetime :datetime, :default => Time.now
       t.timestamps
     end
