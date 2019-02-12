@@ -101,7 +101,7 @@ end
 200.times { |index|
   current = Appointment.find(index+1)
   rating = (1..5).to_a.sample
-  current.update(chef_rating: rating, reivew: lorem.sample((10..25).to_a.sample).join(" ") + "." )
+  current.update(chef_rating: rating, review: lorem.sample((10..25).to_a.sample).join(" ") + "." )
   current_chef = Chef.find(current.chef_id)
   count = current_chef.appointments.select{|a| a.chef_rating > 0 }.count
   new_rating = current_chef.appointments.map{ |a| a.chef_rating}.reduce(:+).to_f / count.to_f

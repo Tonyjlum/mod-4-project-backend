@@ -29,7 +29,7 @@ class Api::V1::AppointmentsController < ApplicationController
   private
 
   def appointment_params
-    params.require(:appointment).permit(:user_id, :guest_count, :chef_id, :cost, :note, :datetime)
+    params.require(:appointment).permit(:user_id, :guest_count, :chef_id, :cost, :note, :datetime, :chef_rating, :review)
   end
 
 end
