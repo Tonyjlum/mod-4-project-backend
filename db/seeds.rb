@@ -19,10 +19,6 @@ def chef_photos
   ["https://images.unsplash.com/photo-1543990200-991577fddc8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80", "https://images.unsplash.com/photo-1541167113378-1f06d813887f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"].sample
 end
 
-Chef.destroy_all
-puts "destroying  all Chefs!"
-puts "creating Chefs"
-
 # chef1 = Chef.create(name:"Walter White", specialty: "mexican", price: 40, rating: 5, profile_picture_url: "https://media1.s-nbcnews.com/j/streams/2012/October/121010/1C4235316-121010-ent-cranston-hmed.fit-760w.jpg",  bio: lorem.sample(40).join(" ") + "." )
 
 # Chef.create(name:"Boyardee", specialty:"italian", price: 22, rating: 2, profile_picture_url: "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Chefboyardeepic.jpg/220px-Chefboyardeepic.jpg", bio: lorem.sample(40).join(" ") + "." )
@@ -43,14 +39,18 @@ puts "creating Chefs"
 #
 # Chef.create(name: "Action Bronson", specialty: "other", price: 26, rating: 5, profile_picture_url: "https://img1.mashed.com/img/gallery/the-untold-truth-of-action-bronson/hell-eat-almost-anything-1506387015.jpg", bio: lorem.sample(40).join(" ") + "." )
 #
-# Chef.create(name: "John Martinez", specialty: "japanese", price: 80, rating: 5, profile_picture_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2F4ehO5e4.jpg", bio: lorem.sample(40).join(" ") + "." )
 #
 # Chef.create(name: "Bruno Albouze", specialty: "other", price: 77, rating: 4, profile_picture_url: "https://d3ciwvs59ifrt8.cloudfront.net/7258edbb-fe65-489f-8cf4-f062769bdb54/7f7236f8-a894-4a10-a36d-6f1012eb4feb.jpg", bio: lorem.sample(40).join(" ") + "." )
 
 User.create(name: "Flatiron School", location: "11 Broadway 2nd Floor, New York, NY 10004", rating: 5)
 
+20.times do
+  User.create(name: Faker::FunnyName.two_word_name, location: Faker::Address.full_address)
+end
+
 
 chef1 = Chef.create(name: "Charlie Russo", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/8BhBCWC/Chummm.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "John Martinez", specialty: "japanese", price: 80, rating: 5, profile_picture_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2F4ehO5e4.jpg", bio: lorem.sample(40).join(" ") + "." )
 Chef.create(name: "Adam Saland", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/f9fJWJH/AS.jpg", bio: lorem.sample(40).join(" ") + ".")
 Chef.create(name: "Chris Benedict", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/VwjPhF5/CB.jpg", bio: lorem.sample(40).join(" ") + ".")
 Chef.create(name: "Chris Metzger", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/47rHbtt/CM.jpg", bio: lorem.sample(40).join(" ") + ".")
@@ -69,30 +69,42 @@ Chef.create(name: "Simon Lee", specialty: food_speciality, price: (10..99).to_a.
 Chef.create(name: "Satya Sinha", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/k4xMmnK/SS.jpg", bio: lorem.sample(40).join(" ") + ".")
 Chef.create(name: "Thao Pham", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/4WXHFf5/TP.jpg", bio: lorem.sample(40).join(" ") + ".")
 
+# stock pics chefs
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/nBP1pWt/SP-1.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/sH5MzJg/SP-2.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/jR35W7x/SP-3.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/mFsRKkS/SP-4.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/0qmykfY/SP-5.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/C0h90v5/SP-6.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/WvxdQVG/SP-7.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/KKWpYnk/SP-8.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/Y81mTr1/SP-9.jpg", bio: lorem.sample(40).join(" ") + ".")
 
 
 
 
-
-
-
-Chef.create(name: Faker::Name.name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/nBP1pWt/SP-1.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::Name.name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/sH5MzJg/SP-2.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::Name.name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/jR35W7x/SP-3.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::Name.name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/mFsRKkS/SP-4.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::Name.name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/0qmykfY/SP-5.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::Name.name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/C0h90v5/SP-6.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::Name.name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/WvxdQVG/SP-7.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::Name.name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/KKWpYnk/SP-8.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::Name.name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/Y81mTr1/SP-9.jpg", bio: lorem.sample(40).join(" ") + ".")
-
-
-
-
-
+#static appointment for user 1, Flatiron
 Appointment.create(user_id: 1, chef_id: 1, guest_count: 3, cost: chef1.price * 3, note: "first one yaayy!", datetime: Time.now)
-# 40.times do
-#   Chef.create(name: Faker::Name.name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (1..5).to_a.sample, profile_picture_url: chef_photos, bio: lorem.sample(40).join(" ") + ".")
-# end
+10.times do
+  chef = Chef.all.sample
+  guest_count = (1..6).to_a.sample
+  Appointment.create(user_id: 1, chef_id: chef.id, guest_count: guest_count, cost: guest_count * chef.price, datetime: Faker::Time.forward(31), note: lorem.sample((10..20).to_a.sample).join(" ") + ".")
+end
+
+
+200.times do
+  chef = Chef.all.sample
+  guest_count = (1..6).to_a.sample
+  Appointment.create(user_id: User.all.sample.id, chef_id: chef.id, guest_count: guest_count, cost: guest_count * chef.price, datetime: Faker::Time.forward(31), note: lorem.sample((10..20).to_a.sample).join(" ") + ".")
+end
+
+100.times do
+  chef = Chef.all.sample
+  guest_count = (1..6).to_a.sample
+  Appointment.create(user_id: User.all.sample.id, chef_id: chef.id, guest_count: guest_count, cost: guest_count * chef.price, datetime: Faker::Date.backward(14), note: lorem.sample((10..20).to_a.sample).join(" ") + ".")
+end
+
+
+
 
 puts "Finish Seeding Chefs"
