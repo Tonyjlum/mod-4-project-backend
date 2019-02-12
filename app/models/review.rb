@@ -1,4 +1,3 @@
 class Review < ApplicationRecord
-  belongs_to :chef
-  belongs_to :user
+  belongs_to :appointment
 end
