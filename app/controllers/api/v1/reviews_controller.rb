@@ -5,5 +5,4 @@ class Api::V1::ReviewsController < ApplicationController
    render json: @reviews
  end
 
-
 end
