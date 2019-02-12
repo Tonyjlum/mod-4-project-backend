@@ -49,36 +49,36 @@ User.create(name: "Flatiron School", location: "11 Broadway 2nd Floor, New York,
 end
 
 
-chef1 = Chef.create(name: "Charlie Russo", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/8BhBCWC/Chummm.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "John Martinez", specialty: "japanese", price: 80, rating: 5, profile_picture_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2F4ehO5e4.jpg", bio: lorem.sample(40).join(" ") + "." )
-Chef.create(name: "Adam Saland", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/f9fJWJH/AS.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Chris Benedict", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/VwjPhF5/CB.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Chris Metzger", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/47rHbtt/CM.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Damon Collins", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/CWRWgZ2/DC.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Dan Hamilton", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/WxMQsnJ/DH.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Dick Ward", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/bHBSJ3g/DW.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Evans Wang", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/whJ3HDw/EW.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Isaac Oseas", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/fxYfQBq/IO.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Joyce Kwon", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/S3mP4n9/JK.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Joshua Cocciardi", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/JKSKrQS/JM.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Mahmoud Agamy", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/MVnW89K/MA.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Matthew Doering", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/HXm1pgs/MD.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Michael Muniz", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/Xsh0jth/MM.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Rachel Lum", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/1QFJ0Zm/RL.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Simon Lee", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/wMrntFH/SL.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Satya Sinha", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/k4xMmnK/SS.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: "Thao Pham", specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/4WXHFf5/TP.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "John Martinez", specialty: "japanese", price: 80, profile_picture_url: "https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi.imgur.com%2F4ehO5e4.jpg", bio: lorem.sample(40).join(" ") + "." )
+chef1 = Chef.create(name: "Charlie Russo", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/8BhBCWC/Chummm.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Adam Saland", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/f9fJWJH/AS.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Chris Benedict", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/VwjPhF5/CB.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Chris Metzger", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/47rHbtt/CM.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Damon Collins", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/CWRWgZ2/DC.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Dan Hamilton", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/WxMQsnJ/DH.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Dick Ward", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/bHBSJ3g/DW.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Evans Wang", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/whJ3HDw/EW.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Isaac Oseas", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/fxYfQBq/IO.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Joyce Kwon", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/S3mP4n9/JK.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Joshua Cocciardi", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/JKSKrQS/JM.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Mahmoud Agamy", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/MVnW89K/MA.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Matthew Doering", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/HXm1pgs/MD.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Michael Muniz", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/Xsh0jth/MM.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Rachel Lum", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/1QFJ0Zm/RL.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Simon Lee", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/wMrntFH/SL.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Satya Sinha", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/k4xMmnK/SS.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: "Thao Pham", specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/4WXHFf5/TP.jpg", bio: lorem.sample(40).join(" ") + ".")
 
 # stock pics chefs
-Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/nBP1pWt/SP-1.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/sH5MzJg/SP-2.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/jR35W7x/SP-3.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/mFsRKkS/SP-4.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/0qmykfY/SP-5.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/C0h90v5/SP-6.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/WvxdQVG/SP-7.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/KKWpYnk/SP-8.jpg", bio: lorem.sample(40).join(" ") + ".")
-Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, rating: (2..5).to_a.sample, profile_picture_url: "https://i.ibb.co/Y81mTr1/SP-9.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/nBP1pWt/SP-1.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/sH5MzJg/SP-2.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/jR35W7x/SP-3.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/mFsRKkS/SP-4.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/0qmykfY/SP-5.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/C0h90v5/SP-6.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/WvxdQVG/SP-7.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/KKWpYnk/SP-8.jpg", bio: lorem.sample(40).join(" ") + ".")
+Chef.create(name: Faker::FunnyName.two_word_name, specialty: food_speciality, price: (10..99).to_a.sample, profile_picture_url: "https://i.ibb.co/Y81mTr1/SP-9.jpg", bio: lorem.sample(40).join(" ") + ".")
 
 
 
@@ -91,18 +91,31 @@ Appointment.create(user_id: 1, chef_id: 1, guest_count: 3, cost: chef1.price * 3
   Appointment.create(user_id: 1, chef_id: chef.id, guest_count: guest_count, cost: guest_count * chef.price, datetime: Faker::Time.forward(31), note: lorem.sample((10..20).to_a.sample).join(" ") + ".")
 end
 
-
 200.times do
+  chef = Chef.all.sample
+  guest_count = (1..6).to_a.sample
+  Appointment.create(user_id: User.all.sample.id, chef_id: chef.id, guest_count: guest_count, cost: guest_count * chef.price, datetime: Faker::Date.backward(14), note: lorem.sample((10..20).to_a.sample).join(" ") + ".")
+
+end
+
+200.times { |index|
+  current = Appointment.find(index+1)
+  rating = (1..5).to_a.sample
+  current.update(chef_rating: rating, reivew: lorem.sample((10..25).to_a.sample).join(" ") + "." )
+  current_chef = Chef.find(current.chef_id)
+  count = current_chef.appointments.select{|a| a.chef_rating > 0 }.count
+  new_rating = current_chef.appointments.map{ |a| a.chef_rating}.reduce(:+).to_f / count.to_f
+  current_chef.update(rating: new_rating.round(1))
+}
+
+
+300.times do
   chef = Chef.all.sample
   guest_count = (1..6).to_a.sample
   Appointment.create(user_id: User.all.sample.id, chef_id: chef.id, guest_count: guest_count, cost: guest_count * chef.price, datetime: Faker::Time.forward(31), note: lorem.sample((10..20).to_a.sample).join(" ") + ".")
 end
 
-100.times do
-  chef = Chef.all.sample
-  guest_count = (1..6).to_a.sample
-  Appointment.create(user_id: User.all.sample.id, chef_id: chef.id, guest_count: guest_count, cost: guest_count * chef.price, datetime: Faker::Date.backward(14), note: lorem.sample((10..20).to_a.sample).join(" ") + ".")
-end
+
 
 
 

@@ -4,9 +4,10 @@ class CreateChefs < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :specialty
       t.integer :price
-      t.integer :rating
       t.string :profile_picture_url
       t.string :bio
+      t.float :rating, :default => 0
+      t.integer :review
 
       t.timestamps
     end
