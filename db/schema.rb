@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 2019_02_08_152238) do
     t.integer "guest_count"
     t.integer "cost"
     t.string "note", default: "none"
-    t.datetime "datetime", default: "2019-02-12 18:37:20"
-    t.string "reivew", default: "0"
+    t.datetime "datetime", default: "2019-02-12 20:06:54"
+    t.string "review", default: "0"
     t.float "chef_rating", default: 0.0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
