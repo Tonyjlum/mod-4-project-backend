@@ -91,16 +91,16 @@ Appointment.create(user_id: 1, chef_id: 1, guest_count: 3, cost: chef1.price * 3
   Appointment.create(user_id: 1, chef_id: chef.id, guest_count: guest_count, cost: guest_count * chef.price, datetime: Faker::Time.forward(31), note: lorem.sample((10..20).to_a.sample).join(" ") + ".")
 end
 
-200.times do
+75.times do
   chef = Chef.all.sample
   guest_count = (1..6).to_a.sample
   Appointment.create(user_id: User.all.sample.id, chef_id: chef.id, guest_count: guest_count, cost: guest_count * chef.price, datetime: Faker::Date.backward(14), note: lorem.sample((10..20).to_a.sample).join(" ") + ".")
 
 end
 
-200.times { |index|
+85.times { |index|
   current = Appointment.find(index+1)
-  rating = (1..5).to_a.sample
+  rating = (2..5).to_a.sample
   current.update(chef_rating: rating, review: lorem.sample((10..25).to_a.sample).join(" ") + "." )
   current_chef = Chef.find(current.chef_id)
   count = current_chef.appointments.select{|a| a.chef_rating > 0 }.count
@@ -109,7 +109,7 @@ end
 }
 
 
-300.times do
+75.times do
   chef = Chef.all.sample
   guest_count = (1..6).to_a.sample
   Appointment.create(user_id: User.all.sample.id, chef_id: chef.id, guest_count: guest_count, cost: guest_count * chef.price, datetime: Faker::Time.forward(31), note: lorem.sample((10..20).to_a.sample).join(" ") + ".")
