@@ -31,7 +31,7 @@ chef1 = Chef.create(name: "Charlie Russo", specialty: food_speciality, price: (4
 Chef.create(name: "Adam Saland", specialty: food_speciality, price: (40..99).to_a.sample, profile_picture_url: "https://i.ibb.co/f9fJWJH/AS.jpg", bio: lorem )
 Chef.create(name: "Chris Benedict", specialty: food_speciality, price: (40..99).to_a.sample, profile_picture_url: "https://i.ibb.co/VwjPhF5/CB.jpg", bio: lorem )
 Chef.create(name: "Chris Metzger", specialty: food_speciality, price: (40..99).to_a.sample, profile_picture_url: "https://i.ibb.co/47rHbtt/CM.jpg", bio: lorem )
-Chef.create(name: "Damon Collins", specialty: food_speciality, price: (40..99).to_a.sample, profile_picture_url: "https://i.ibb.co/CWRWgZ2/DC.jpg", bio: lorem )
+Chef.create(name: "Damon Collins", specialty: food_speciality, price: (40..99).to_a.sample, profile_picture_url: "https://i.ibb.co/CWRWgZ2/DC.jpg", bio: "I makes the bacon, " + lorem )
 Chef.create(name: "Dan Hamilton", specialty: food_speciality, price: (40..99).to_a.sample, profile_picture_url: "https://i.ibb.co/WxMQsnJ/DH.jpg", bio: lorem )
 Chef.create(name: "Dick Ward", specialty: food_speciality, price: (40..99).to_a.sample, profile_picture_url: "https://i.ibb.co/bHBSJ3g/DW.jpg", bio: lorem )
 Chef.create(name: "Evans Wang", specialty: food_speciality, price: (40..99).to_a.sample, profile_picture_url: "https://i.ibb.co/whJ3HDw/EW.jpg", bio: lorem )
