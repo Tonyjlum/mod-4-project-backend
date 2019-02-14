@@ -75,16 +75,16 @@ Appointment.create(user_id: 1, chef_id: 1, guest_count: 3, cost: chef1.price * 3
   Appointment.create(user_id: 1, chef_id: chef.id, guest_count: guest_count, cost: guest_count * chef.price, datetime: Faker::Time.forward(31), note: lorem)
 end
 
-75.times do
+140.times do
   chef = Chef.all.sample
   guest_count = (1..6).to_a.sample
   Appointment.create(user_id: User.all.sample.id, chef_id: chef.id, guest_count: guest_count, cost: guest_count * chef.price, datetime: Faker::Date.backward(14), note: lorem)
 
 end
 
-85.times { |index|
+150.times { |index|
   current = Appointment.find(index+1)
-  rating = (2..5).to_a.sample
+  rating = [1,2,2,3,3,4,4,5,5].sample
 
   current.update(chef_rating: rating, review: review_hash[rating].sample(3).join(". "))
   current_chef = Chef.find(current.chef_id)
