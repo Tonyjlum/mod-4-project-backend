@@ -17,12 +17,12 @@ class Api::V1::AppointmentsController < ApplicationController
 
   def update
     @appointment = Appointment.find(params[:id])
+    @appointment.update(appointment_params)
     @rating = appointment_params["chef_rating"].to_f
     @current_chef = Chef.find(@appointment.chef_id)
     @all_chef_appointment = @current_chef.appointments
     @all_chef_ratings = @all_chef_appointment.select{|a| a.chef_rating > 0 }.map{|a| a.chef_rating}
     @current_chef.update(rating: @all_chef_ratings.reduce(:+) / @all_chef_ratings.count)
-    @appointment.update(appointment_params)
     render json: @appointment, status: :accepted
   end
 
